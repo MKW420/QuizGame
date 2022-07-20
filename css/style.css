@@ -22,7 +22,7 @@
 body{
     width: 100%;
 background-color: black;
-font-family: 'Oswald', sans-serif;
+   font-family: 'Oswald', sans-serif;
 }
 :root{
 
@@ -38,16 +38,16 @@ h1{
 
 }
 h2{
-    font-size: 4.2rem;
+    font-size: 3.2rem;
     margin-bottom:4rem;
 }
-.ctnr{
+.container{
     width:100vw;
     height:100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width:80rem;
+    max-width:40rem;
     margin:0 auto;
     padding:2rem;
 }
@@ -105,4 +105,47 @@ transform: none;
 }
 #highscore-btn:hover{
     box-shadow: 0 0.4rem 1.4rem 0 #DB6BE2;
+}
+
+
+/* End page CSS*/
+
+.end-form-cntr{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width:30rem;
+
+}
+
+input{
+    margin-bottom:1rem;
+    width:30rem;
+    padding:1.5rem;
+    font-size: 1.8rem;
+    font-family: 'Oswald', sans-serif;
+    border:none;
+    box-shadow: 0 0.1rem 1.4rem 0  #DB6BE2;
+}
+input::placeholder{
+    color:#aaa;
+
+
+}
+button{
+    font-family: 'Oswald', sans-serif;
+}
+#username{
+   margin-bottom: 3rem; 
+   width:100%;
+   outline:none;
+}
+#end-text{
+    font-size: 2.4rem;
+    color:#fff;
+    text-align: center;
+}
+#saveScoreBtn{
+    border:none;
 }
