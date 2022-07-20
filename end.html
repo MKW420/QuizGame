@@ -5,25 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png"  sizes="180x180"  href="/QuizGame/img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet"> 
-    
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet"> 
+    <title>Edu Quiz</title>
 </head>
 <body>
+    <header>
+        <img src="../QuizGame/img/Vintage Cool Milkshake Dessert Shop Logo.png">
+       </header>
     <div class="container">
         <div id="end" class="flex-center flex-column">
             <h1 id="finalScore">0</h1>
             <form action="" class="end-form-cntr">
                 <h2 id="end-text">Enter your name to save your score</h2>
-                <input type="text" name="name" id="username" placeholder="enter your name">
-                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
+                <input type="text" name="name" id="username" placeholder="Enter your name">
+                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" >Save</button>
            
             </form>
             <a class="btn" href="./game.html">Play again</a>
-            <a href="./" class="btn">Go Home</a>
+            <a href="./Index.html" class="btn">Go Home</a>
         </div>
     </div>
+    <script src="js/end.js"></script>
 </body>
 </html>

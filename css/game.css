@@ -30,10 +30,10 @@ body{
     width:100%;
 }
 .correct{
-    background-color: linear-gradient(32deg,rgb(11,223,36) 0%, rgb(41,232,11) 100%);
+    background: linear-gradient(32deg,rgb(11,223,36) 0%, rgb(41,232,11) 100%);
 }
 .incorrect{
-    background-color: linear-gradient(32deg,rgb(230,29,1) 0%, rgb(224,11,11,1) 100%);
+    background: linear-gradient(32deg,rgb(230,29,1) 0%, rgb(224,11,11,1) 100%);
 }
 
 /*Heads of display*/
@@ -45,14 +45,17 @@ body{
 .hud-prefix{
     text-align: center;
     font-size: 2rem;
+    color:#DB6BE2;
 }
 .hud-main-text{
     text-align: center;
+    font-size: 2rem;
+    color:#DB6BE2;
 }
 
 #progressBar{
-    width:20rem;
-    height:3rem;
+    width:15rem;
+    height:2rem;
     border:0.2rem solid rgba(11,223,36);
     margin-top: 2rem;
     border-radius:50px;
@@ -65,10 +68,12 @@ body{
     width: 0%;
 }
 
-
+#question{
+    font-family: 'Oswald', sans-serif;
+}
 
 @media screen and (max-width:768px){
     .choice-ctnr{
-        min-width: 40rem;
+        min-width: 20rem;
     }
 }

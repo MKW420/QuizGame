@@ -1,7 +1,7 @@
 const username = document.querySelector('#username')
-const saveScoreBtn = document.querySelector('#username')
+const saveScoreBtn = document.querySelector('#saveScoreBtn')
 const finalScore = document.querySelector('#finalScore')
-const mostRecentScore = document.querySelector('#mostRecentScore')
+const mostRecentScore = localStorage.getItem('mostRecentScore')
 
 
 
@@ -9,6 +9,7 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || []
 
 const MAX_HIGH_SCORES = 5
 finalScore.innerText = mostRecentScore
+
 
 // keyup renames what is writter
 username.addEventListener('keyup', () =>{
@@ -31,6 +32,6 @@ saveHighScore = e =>{
 
     highScores.splice(5)
 
-    localStorage.setItem('highscores',JSON.stringify(highScores))
-    Window.location.assign('/')
+    localStorage.setItem('highScores',JSON.stringify(highScores))
+    window.location.assign('/QuizGame/end.html')
 }

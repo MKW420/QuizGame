@@ -21,35 +21,71 @@
 }
 body{
     width: 100%;
-background-color: black;
+    background:black;
    font-family: 'Oswald', sans-serif;
+   background-image: url('../img/spiderman-g22836569b_1920.png');
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 :root{
 
    
 }
+header{
+    height: 120px;
+    width:100%;
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+    height:160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 h1{
-    font-size: 2.4rem;
+    font-size: 3.5rem;
     color:#DB6BE2;
     margin-bottom:5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Rampart One', cursive;
 
+}
+#question{
+    font-size: 2rem;
 }
 h2{
     font-size: 3.2rem;
     margin-bottom:4rem;
 }
+.pic{
+    height:200px;
+    margin-top: -20px;;
+    width:200px;
+     /* border: 3px solid #DB6BE2; */
+     border-radius: 100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.pic img{
+    height:100px;
+    width:100px;
+}
 .container{
     width:100vw;
-    height:100vh;
+    height:85vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width:40rem;
+    max-width:30rem;
     margin:0 auto;
-    padding:2rem;
+    
+    /* border: 3px solid red;; */
 }
 .flex-column{
     display: flex;
@@ -72,18 +108,19 @@ h2{
 .btn{
     font-size: 1.4rem;
     padding:2rem 0;
-    width:30rem;
+    width:20rem;
     text-align: center;
     margin-bottom:1rem;
     text-decoration: none;
-    color:#DB6BE2;
-    background-color: #1C0125;
+    color:#1C0125;
+    background-color: royalblue;
     border-radius: 4px;
+    font-weight: bolder;
 
 }
 .btn:hover{
     cursor:pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 #DB6BE2;
+    box-shadow: 0 0.4rem 1.4rem 0 #004aad;
     transition: transform  150ms;
     transform: scale(1.03);
 
@@ -115,18 +152,18 @@ transform: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width:30rem;
+    max-width:40rem;
 
 }
 
 input{
     margin-bottom:1rem;
-    width:30rem;
-    padding:1.5rem;
+    width:40rem;
+    padding:1rem;
     font-size: 1.8rem;
     font-family: 'Oswald', sans-serif;
     border:none;
-    box-shadow: 0 0.1rem 1.4rem 0  #DB6BE2;
+    box-shadow: 0 0.1rem 1.4rem 0  royalblue;
 }
 input::placeholder{
     color:#aaa;
@@ -142,10 +179,21 @@ button{
    outline:none;
 }
 #end-text{
-    font-size: 2.4rem;
-    color:#fff;
+    font-size: 2rem;
+    color:#DB6BE2;
     text-align: center;
 }
 #saveScoreBtn{
     border:none;
+}
+footer{
+    height:100px;
+    width:100%;
+    margin-top: -70px;
+}
+footer h2{
+    font-size: large;
+    text-decoration: overline;
+    color: #DB6BE2;
+    text-align: center;
 }
